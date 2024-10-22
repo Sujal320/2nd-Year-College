@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script src="jquery-3.7.1.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$('div').animate({
+						left:500,
+						opacity:0.2,
+						height:100,
+						width:100
+				 });
+			});
+		});
+	</script>
+</head>
+<body>	
+	<button>Move the box!</button>
+	<p></p>
+	<div style="background:dodgerblue;height:50px;width:50px;position:fixed;"></div><br>
+</body>
+<html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script src="jquery-3.7.1.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$('div').animate({
+						width:'toggle'
+				 });
+			});
+		});
+	</script>
+</head>
+<body>	
+	<p>Click the button repeatedly to check its impact.</p>
+	<button>Toggle the Animation</button>
+	<div style='background:dodgerblue;height:50px;width:50px;position:absolute;'></div>
+</body>
+<html>
