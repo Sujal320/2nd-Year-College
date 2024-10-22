@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script src="jquery-3.7.1.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#a").click(function(){
+				$('p').hide();
+				});
+			$('#b').click(function(){
+				$('p').show();
+				})
+			});
+	</script>
+</head>
+<body>	
+	<p>If the Disappear utton is clicked, then the paragraph would disappear.</p>
+	<p>If the appear button is clicked, then the paragraph would appear again.</p>
+	<button id='a'>Disappear</button>
+	<button id='b'>Appear</button>
+</body>
+<html>
