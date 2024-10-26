@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+	</head>
+<body>
+	<p id='par1'><a href="https://www.google.com" id='w3s'>Google.com</a></p>
+	<button id='b1'>Click to change the href value</button>
+	<p>After clicking the link, place your cursor on the hyperlink and check the link address or click it to go to other website.</p>
+</body>
+<script>
+	$(document).ready(function(){
+			$('#b1').click(function(){
+				$('#w3s').attr('href', 'https://www.soa.ac.in');
+			});
+	});
+</script>
+</html>

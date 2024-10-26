@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+	</head>
+<body>
+	<img src='https://upload.wikimedia.org/wikipedia/commons/9/96/Nature_celebrating_India.png' alt='jQuery' width='100' height='70'><br><br>
+	<button id='b1'>Adding text before the image.</button>
+	<button id='b2'>Adding text after the image.</button>
+</body>
+<script>
+	$(document).ready(function(){
+			$('#b1').click(function(){
+				$('img').before('<b>Adding text before the image.</b>');
+			});
+			$('#b1').click(function(){
+				$('img').before('<b>Adding text after the image.</b>');
+			});
+	});
+</script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+	</head>
+<body>
+	<button>Make the heading disappear!</button>
+	<h1>CallBack Function</h1>
+</body>
+<script>
+	$(document).ready(function(){
+			$('button').click(function(){
+				$('h1').hide(3000, function(){
+					alert('The heading has disappeared.');
+				});
+			});
+	});
+</script>
+</html>
