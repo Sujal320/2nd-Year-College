@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='jquery-3.7.1.js'>
+		</script>
+		<style>
+			body{
+				text-align: center;
+				
+			}
+			div.special {
+				margin: 20px;
+				padding: 20px;
+				text-align: center;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<button id='gr'>green</button>
+		<button id='rd'>red</button>
+		<button id='ye'>yellow</button>
+		<button id="toggle">Toggle</button>
+		<div class='special'>This is first element</div>
+		<div class='special'>This is second element</div>
+		<div class='special'>This is third element</div>
+		
+	</body>
+	<script>
+		$(document).ready(function(){
+			$('#gr').click(function(){
+				$(document.body).css('background-color', 'green');
+			});
+			$('#rd').click(function(){
+				$(document.body).css('background-color', 'red');
+			});
+			$('#ye').click(function(){
+				$(document.body).css('background-color', 'yellow');
+			});
+			$('#toggle').click(function(){
+				$('div').toggle();
+			});
+		});
+	</script>
+</html>
