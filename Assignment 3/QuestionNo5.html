@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script>
+    </head>
+    <body>
+        <p>Getting Started with Full Stack</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </body>
+    <script>
+        $('document').ready(function(){
+                $('ul').append('CSS');
+                $('ul').prepend('Introduction to Full Stack Development');
+                $('p').append('<p>Topics Updated</p>');
+                $('p').prepend('<p>Lists of Topics Covered</p>');
+        });
+    </script>
+</html>

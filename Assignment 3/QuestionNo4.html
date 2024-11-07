@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+            p {
+                border: 1px solid black;
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+            div {
+                border: 1px solid black;
+                font-size: 20px;
+                padding: 10px 20px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myParagraph">This is sample paragraph to fetch text from.</p>
+        <strong><div id="myDiv">This is HTML div element to be fetched.</div></strong>
+        <button id="fetchTextBtn">Fetch Text</button>
+        <button id="fetchHtmlBtn">Fetch HTML</button>
+    </body>
+    <script>
+        $('document').ready(function(){
+            $('#fetchTextBtn').click(function(){
+                alert("Text: " + $("#myParagraph").text());
+            });
+            $('#fetchHtmlBtn').click(function(){
+                alert("HTML: " + $("#myDiv").html());
+            });
+        });
+    </script>
+</html>
